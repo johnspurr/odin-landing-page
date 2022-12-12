@@ -1,5 +1,4 @@
 # Project: Landing Page
-### NOTE: This is currently unfinished
 
 My solution for the [Project: Landing Page](https://www.theodinproject.com/lessons/foundations-landing-page) portion of The Odin Project's Foundations course.
 
