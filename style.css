@@ -21,13 +21,14 @@ a {
 }
 
 .header {
-    display: flex;
     background-color: #1F2937;
+    padding: 20px;
 }
 
 .hero {
     background-color: #1F2937;
-    display: flex;
+    padding-top: 96px;
+    padding-bottom: 128px;
 }
 
 .hero-heading {
@@ -39,6 +40,8 @@ a {
 .hero-text {
     font-size: 18px;
     color: #E5E7EB;
+    margin-bottom: 16px;
+    padding-right: 32px;
 }
 
 .hero-content {
@@ -47,10 +50,11 @@ a {
 
 .hero-image {
     flex: 1;
-    background-color: grey;
+    background-color: slategrey;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
 .logo {
@@ -64,6 +68,7 @@ a {
     display: flex;
     font-size: 18px;
     color: #E5E7EB;
+    gap: 20px;
 }
 
 .main {
@@ -78,32 +83,116 @@ a {
 
 .information-heading {
     font-weight: 800;
+    font-size: 36px;
+    text-align: center;
+    padding: 48px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+.card {
+    align: center;
+    text-align: center;
+    width: 175px;
+    font-size: 18px;
+}
+
+.card-image {
+    width: 175px;
+    height: 175px;
+    border-color: #3882F6;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 16px;
+    display: inline-block;
 }
 
 .quote {
     background-color: #E5E7EB;
     display: flex;
     flex-direction: column;
+    padding: 128px 0;
 }
 
-/* .quote-text {
+.quote-text {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+}
 
-} */
+.centered {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.quote > .centered {
+    width: 800px;
+}
+
+.flex {
+    display: flex;
+}
 
 .quote-attribution {
     text-align: right;
     font-weight: 800;
+    font-size: 24px;
 }
 
-.cta {
+.cta-box {
+    background-color: #3882F6;
+    padding: 50px 128px;
     display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin: 100px 0px;    
+}
+
+.cta-text {
+    margin-right: auto;
 }
 
 .cta-heading {
+    color: #F9FAF8;
     font-weight: 800;
+    font-size: 24px;
 }
 
-.footer { 
+.cta-subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+button {
+    padding: 8px 32px;
+    background: #3882F6;
+    border-radius: 8px;
+    border-style: none;
+    color: #F9FAF8;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(110%)
+}
+
+.cta-box > button {
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+.footer {
+    flex-shrink: 0;
     height: 72px;
     background-color: #1F2937;
     font-size: 18px;
